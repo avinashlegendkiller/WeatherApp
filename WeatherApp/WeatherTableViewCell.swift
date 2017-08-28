@@ -40,6 +40,10 @@ class WeatherTableViewCell: UITableViewCell {
             self.weatherImage.image = image
         }
         
+        if let _weatherType = weatherData.days?[indexPath.row].weathers?.first?.description {
+            self.weatherType.text = _weatherType.capitalized
+        }
+        
         if let _dateTimeStamp = weatherData.days?[indexPath.row].dt {
             let date = Date.getLocalDate(fromUnixTimestamp: _dateTimeStamp)
             guard let _date = date else {
