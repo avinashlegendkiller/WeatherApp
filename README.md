@@ -1,4 +1,4 @@
-# WeatherApp
+# WeatherApp - iOS
 This is an iOS app which displays weather for 6 days from current date in a simple Table View.
 
 Using OpenWeatherMap URL, Make a GET request, Parse the response data, You need an apiKey which you need to append to the URL.
